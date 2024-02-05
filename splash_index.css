@@ -1,0 +1,15 @@
+.rectangle-temp-icon {
+  position: absolute;
+  top: 107px;
+  left: 44px;
+  width: 1307px;
+  height: 810px;
+  object-fit: cover;
+}
+.temp-splash {
+  width: 100%;
+  height: 1024px;
+  position: relative;
+  background-color: #f8ae20;
+  overflow: hidden;
+}
