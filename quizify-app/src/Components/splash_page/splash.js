@@ -13,6 +13,12 @@ const Splash = () =>{
   const navigateToLogin = () => {
     window.location.href = '/login'
   };
+  const navigateToNotePage = () => {
+    window.location.href = "/notepage"
+  }
+  const navigateToNoLogin = () => {
+    window.location.href = "./nologin"
+  }
 
   return(
   <body>
@@ -22,6 +28,8 @@ const Splash = () =>{
             <div className="top-right-box">
               <button className="btn btn-secondary rounded-pill" onClick={navigateToSignUp}>Sign Up</button>
               <button className="btn btn-secondary rounded-pill" onClick={navigateToLogin}>Login</button>
+              <button className="btn btn-secondary rounded-pill" onClick={navigateToNotePage}>NotePage</button>
+              <button className="btn btn-secondary rounded-pill" onClick={navigateToNoLogin}>NotePage</button>
             </div>
           </div>
       <img class="rectangle-temp-icon" src={Logo} alt="Logo"/>
