@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+import React from 'react';
+
+const login_index = () => {
+  return(
 <html>
   <head>
     <meta charset="utf-8" />
@@ -46,7 +49,7 @@
         </div>
       </div>
     </div>
-
+{/*
     <script>
       var lOGINText = document.getElementById("lOGINText");
       if (lOGINText) {
@@ -62,5 +65,10 @@
         });
       }
       </script>
+    */}
   </body>
 </html>
+  );
+    };
+
+export default login_index;
