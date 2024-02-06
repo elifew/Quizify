@@ -1,19 +1,17 @@
 import React from 'react';
+import './login_global.css';
+import './login_index.css';
 
-const login_index = () => {
+
+const Login = () => {
+
+  const navigateToSignUp = () => {
+    window.location.href = '/signup'
+  };
+
   return(
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1, width=device-width" />
-
-    <link rel="stylesheet" href="./login_global.css" />
-    <link rel="stylesheet" href="./login_index.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=JetBrains Mono:wght@400&display=swap"
-    />
-  </head>
+<div>
+  
   <body>
     <div class="login">
       <div class="login-child"></div>
@@ -39,10 +37,10 @@ const login_index = () => {
               <button class="rectangle-parent">
                 <div class="frame-child"></div>
                 <div class="login2" id="lOGINText">LOGIN</div>
-              </button>
-              <button class="rectangle-group">
+              </button>   
+              <button class="rectangle-parent">
                 <div class="frame-item"></div>
-                <a href="signup_index.html"><div class="sign-up" id="sIGNUPText">SIGN UP</div></a>
+                <div onClick={navigateToSignUp} class="sign-up2" id="sIGNUPText">SIGN UP</div>
               </button>
             </div>
           </div>
@@ -66,9 +64,10 @@ const login_index = () => {
       }
       </script>
     */}
-  </body>
-</html>
+    </body>
+
+</div>
   );
     };
 
-export default login_index;
+export default Login;

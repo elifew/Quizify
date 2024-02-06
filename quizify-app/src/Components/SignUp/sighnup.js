@@ -1,16 +1,11 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1, width=device-width" />
+import React from 'react';
+import {Link} from 'react-router-dom';
+import './signup_global.css';
+import './signup_index.css';
 
-    <link rel="stylesheet" href="./signup_global.css" />
-    <link rel="stylesheet" href="./signup_index.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=JetBrains Mono:wght@400&display=swap"
-    />
-  </head>
+
+const SignUp =() =>{
+  return(
   <body>
     <div class="sign-up">
       <div class="sign-up-box">
@@ -30,9 +25,9 @@
           <div class="second-rectangle"></div>
         </div>
       </div>
-      <div class="sign-up2" id="sIGNUPText">SIGN UP</div>
+      <Link to="/signup" class="sign-up2" id="sIGNUPText">SIGN UP</Link>
     </div>
-
+{/*
     <script>
       var sIGNUPText = document.getElementById("sIGNUPText");
       if (sIGNUPText) {
@@ -41,5 +36,10 @@
         });
       }
       </script>
+    */}
+
   </body>
-</html>
+  );
+};
+
+export default SignUp;
