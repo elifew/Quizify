@@ -5,8 +5,38 @@ import './signup_index.css';
 
 
 const SignUp =() =>{
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  
+    // Regular expressions for password complexity
+    const numberRegex = /\d/;
+    const uppercaseRegex = /[A-Z]/;
+    const lowercaseRegex = /[a-z]/;
+    const specialCharRegex = /[!@#$%^&*()_+{}\[\]:;<>,.?/~\\-]/;
+  
+    // Perform validation checks
+    if (
+      !email.includes('@') ||
+      password.length < 6 ||
+      !numberRegex.test(password) ||
+      !uppercaseRegex.test(password) ||
+      !lowercaseRegex.test(password) ||
+      !specialCharRegex.test(password)
+    ) {
+      setError(
+        'Password must be at least 6 characters long and include at least one number, one uppercase letter, one lowercase letter, and one special character.'
+      );
+      return;
+    }
+  
+    // Clear any existing errors
+    setError('');
+  
+    // Proceed with sign-in logic
+  };
+
   return(
-  <body>
     <div class="sign-up">
       <div class="sign-up-box">
         <h1 class="sign-up1">SIGN-UP</h1>
@@ -27,18 +57,6 @@ const SignUp =() =>{
       </div>
       <Link to="/signup" class="sign-up2" id="sIGNUPText">SIGN UP</Link>
     </div>
-{/*
-    <script>
-      var sIGNUPText = document.getElementById("sIGNUPText");
-      if (sIGNUPText) {
-        sIGNUPText.addEventListener("click", function (e) {
-          // Please sync "Home w/ Login" to the project
-        });
-      }
-      </script>
-    */}
-
-  </body>
   );
 };
 
