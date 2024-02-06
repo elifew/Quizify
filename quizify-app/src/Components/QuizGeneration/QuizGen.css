@@ -33,6 +33,7 @@ body{
   
   .dropdown {
     width: calc(20% - 5px); /* 20% width with spacing between buttons */
+    margin: 10px;
   }
 
   .multi-select {
@@ -59,14 +60,13 @@ body{
 }
 
 .checkbox {
-    margin-bottom: 10px; /* Add space between checkboxes */
+    margin-bottom: 5px; /* Add space between checkboxes */
 }
 .button-box{
     border-width: 1px;
     border-style: solid;
     border-color:black;
-    padding-left:2px;
-    padding-right:2px;
+    margin: 5px;
 }
 
 .button-container{
