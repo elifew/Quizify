@@ -1,4 +1,5 @@
 import React from 'react';
+import {useNavigate} from 'react-router-dom';
 import './login_global.css';
 import './login_index.css';
 import Logo from './logo.png';
@@ -6,12 +7,17 @@ import Logo from './logo.png';
 
 const Login = () => {
 
-  const navigateToSignUp = () => {
-    window.location.href = '/signup'
-  };
-
-  return(
   
+    const navigate = useNavigate();
+  
+    const navigateToSignUp = () => {
+      navigate('/signup');
+    };
+    const navigateToQuizGen = () => {
+      navigate('/quizgen');
+    };
+  
+  return(
   <form id="Login">
         <div className="login">
           <div className="login-child"></div>
@@ -36,7 +42,7 @@ const Login = () => {
                 <div className="divider-frame1">
                   <button className="rectangle-parent">
                     <div className="frame-child"></div>
-                    <div className="login2" id="lOGINText">LOGIN</div>
+                    <div onClick={navigateToQuizGen} className="login2" id="lOGINText">LOGIN</div>
                   </button>   
                   <button className="rectangle-parent">
                     <div className="frame-item"></div>
