@@ -1,17 +1,10 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1, width=device-width" />
+import React from "react";
+import "./notepageglobal.css";
+import "./notepageindex.css";
 
-    <link rel="stylesheet" href="./h_login_global.css" />
-    <link rel="stylesheet" href="./h_login_index.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=JetBrains Mono:wght@400&display=swap"
-    />
-  </head>
-  <body>
+const NotePage = () => {
+
+  return(
     <div class="home-w-login">
       <section class="first-frame">
         <header class="second-frame">
@@ -23,7 +16,7 @@
               <a href="h_login_index.html"><div class="home">home</div></a>
             </div>
             <div class="frame-within-home1">
-              <div class="frame-within-home-item" id="rectangle"></button>
+              <div class="frame-within-home-item" id="rectangle"></div>
               <a href="h_nologin_index.html"><div class="log-out">log out</div></a>
             </div>
           </div>
@@ -52,14 +45,7 @@
         </div>
       </div>
     </div>
+  );
+};
 
-    <script>
-      var rectangle = document.getElementById("rectangle");
-      if (rectangle) {
-        rectangle.addEventListener("click", function (e) {
-          // Please sync "Home w/o Login" to the project
-        });
-      }
-      </script>
-  </body>
-</html>
+export default NotePage;

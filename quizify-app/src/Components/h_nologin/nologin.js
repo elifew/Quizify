@@ -1,17 +1,9 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1, width=device-width" />
+import React from "react";
+import "./nologinglobal.css";
+import "./nologinindex.css";
 
-    <link rel="stylesheet" href="./h_nologin_global.css" />
-    <link rel="stylesheet" href="./h_nologin_index.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=JetBrains Mono:wght@400&display=swap"
-    />
-  </head>
-  <body>
+const NoLogin = () => {
+  return(
     <div class="home-wo-login">
       <section class="main-frame">
         <header class="frame-a">
@@ -52,14 +44,7 @@
         </div>
       </div>
     </div>
+  );
+};
 
-    <script>
-      var rectangle = document.getElementById("rectangle");
-      if (rectangle) {
-        rectangle.addEventListener("click", function (e) {
-          // Please sync "Login" to the project
-        });
-      }
-      </script>
-  </body>
-</html>
+export default NoLogin;
