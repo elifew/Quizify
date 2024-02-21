@@ -7,7 +7,6 @@ import Logo from './logo.png';
 
 const Login = () => {
 
-  
     const navigate = useNavigate();
   
     const navigateToSignUp = () => {

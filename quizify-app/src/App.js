@@ -6,6 +6,7 @@ import Splash from './Components/splash_page/splash';
 import NotePage from './Components/h_login/NotePage';
 //import NoLogin from './Components/h_nologin/nologin';
 import QuizGen from './Components/QuizGeneration/QuizGen';
+import OpenAIComponent from './Components/QuizGeneration/testQuiz';
 
 
 
@@ -14,7 +15,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
             <Routes>
-                  <Route path='/' element={<Splash/>}/>
+                  <Route path='/' element={<QuizGen/>}/>
                   <Route path='/signup' element={<SignUp/>} />
                   <Route path="/login" element = {<Login/>} />
                   <Route path="/quizgen" element = {<QuizGen/>}/>
